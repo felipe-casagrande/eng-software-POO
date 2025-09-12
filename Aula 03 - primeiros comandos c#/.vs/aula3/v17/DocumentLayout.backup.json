@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Felipao\\source\\repos\\aula3\\",
+  "WorkspaceRootPath": "C:\\Users\\Felipao\\Documents\\POO\\POO\\Aula 03 - primeiros comandos c#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9F6A06E-0C9E-491C-B849-3041E10A3971}|aula3\\aula3.csproj|c:\\users\\felipao\\source\\repos\\aula3\\aula3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9F6A06E-0C9E-491C-B849-3041E10A3971}|aula3\\aula3.csproj|c:\\users\\felipao\\documents\\poo\\poo\\aula 03 - primeiros comandos c#\\aula3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9F6A06E-0C9E-491C-B849-3041E10A3971}|aula3\\aula3.csproj|solutionrelative:aula3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9F6A06E-0C9E-491C-B849-3041E10A3971}|aula3\\aula3.csproj|c:\\users\\felipao\\source\\repos\\aula3\\aula3\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9F6A06E-0C9E-491C-B849-3041E10A3971}|aula3\\aula3.csproj|c:\\users\\felipao\\documents\\poo\\poo\\aula 03 - primeiros comandos c#\\aula3\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9F6A06E-0C9E-491C-B849-3041E10A3971}|aula3\\aula3.csproj|solutionrelative:aula3\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,49 +18,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Felipao\\source\\repos\\aula3\\aula3\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Felipao\\Documents\\POO\\POO\\Aula 03 - primeiros comandos c#\\aula3\\Program.cs",
               "RelativeDocumentMoniker": "aula3\\Program.cs",
-              "ToolTip": "C:\\Users\\Felipao\\source\\repos\\aula3\\aula3\\Program.cs",
+              "ToolTip": "C:\\Users\\Felipao\\Documents\\POO\\POO\\Aula 03 - primeiros comandos c#\\aula3\\Program.cs",
               "RelativeToolTip": "aula3\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T18:34:46.03Z",
               "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "738b5a59-e49b-4185-a7b4-7d93c8f0a1be",
-        "Display": 0,
-        "X": 306,
-        "Y": 118,
-        "Width": 1553,
-        "Height": 785,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Pessoa.cs",
-              "DocumentMoniker": "C:\\Users\\Felipao\\source\\repos\\aula3\\aula3\\Pessoa.cs",
+              "DocumentMoniker": "C:\\Users\\Felipao\\Documents\\POO\\POO\\Aula 03 - primeiros comandos c#\\aula3\\Pessoa.cs",
               "RelativeDocumentMoniker": "aula3\\Pessoa.cs",
-              "ToolTip": "C:\\Users\\Felipao\\source\\repos\\aula3\\aula3\\Pessoa.cs",
+              "ToolTip": "C:\\Users\\Felipao\\Documents\\POO\\POO\\Aula 03 - primeiros comandos c#\\aula3\\Pessoa.cs",
               "RelativeToolTip": "aula3\\Pessoa.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
