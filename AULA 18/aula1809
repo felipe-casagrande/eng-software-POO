@@ -1,0 +1,94 @@
+## cria uma class que reserva os atributos de uma pessoa
+## cria uma classe que defina um objeto -- > qualquer frua,carro, moto
+## cria uma classe que apresenta os seguintes atributos:
+## class banco atributos -->(numero,nome,saldo,nome do banco, agencia)
+# - Metodos
+#   -Transferir - TED, sacar, Pix, Cheque_especial, emprestimo, credito
+#   - transferir - TED  se eu tiver a quantia em conta -- Tem um % cobrado se o banco for diferente
+#   - PIX só posso realizar se eu tiver o valor em conta
+#   - Cheque_especial --> O seu saldo precisa ser <0 (negativo), ele tem juros --
+#   - Emprestimo --> Comprar uma casa e solicitar um emprestimo ao banco e seu perfil sera avaliado
+#   - Credito --> é quando vc quer comprar algo e ter um saldo < ou > que o valor do produto e terá uma cobrança no final do mês.
+#      - Credito deve ter um relatorio de ações 
+
+
+namespace Aula
+{
+    public class carro
+    {
+        public bool ChaveAtivada { get; private set; } = false;
+        public int velocidade { get; private set; } = 0;
+        public bool PortasAbertas { get; private set; } = false;
+
+        public void Abrir()
+        {
+            PortasAbertas = true;
+    
+        }
+        public void Fechar()
+        {
+            PortasAbertas = false;
+        }
+        public void AtivarChavesSeAberto() 
+        {
+            if (PortasAbertas) 
+            {
+                ChaveAtivada = true;
+                Console.WriteLine("Chave Ativada!");
+            }   
+        }
+        public void Acelerar(int incremento)
+        {
+            if (incremento > 0) 
+            {
+                velocidade += incremento;
+                Console.WriteLine("Acelerando o carro");
+            }       
+        }
+        public void Frear() 
+        {
+            if (velocidade > 0)
+            {
+                velocidade -= 5;
+                if (velocidade < 0)
+                    velocidade = 0;
+                Console.WriteLine("Freando carro..."); 
+            }
+
+
+            else
+            {
+                Console.WriteLine("O carro ja esta parado");
+            }            
+        }
+        public void desligar() 
+        {
+            if (velocidade == 0) 
+            {
+                ChaveAtivada = false;
+                Console.WriteLine("Carro desligado");
+            }
+            else
+            {
+                Console.WriteLine("Carro está em movimento, nao pode ser desligado");
+            }
+        }
+
+        public class Apresentar
+        {
+            static void Main(string[] args) 
+            {
+                carro meuCarro = new carro();
+                meuCarro.Abrir();
+                meuCarro.Acelerar(20);
+                meuCarro.Frear();
+                meuCarro.Frear();
+                meuCarro.Frear();
+                meuCarro.Frear();
+                meuCarro.desligar();
+            }
+        }
+            
+        
+    }
+}
