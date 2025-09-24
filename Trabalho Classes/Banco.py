@@ -1,8 +1,10 @@
-from Pessoa import Pessoa,Objeto
+from Pessoa import Pessoa
 
 
 class Banco:
     #metodo  construtor
+    # único atributo que adicionei além foi o titular para podermos utilizarmos a class Pessoa para usar o nome e idade posteriormente!
+
     def __init__(self,numero,titular:Pessoa,saldo,nome_do_banco,agencia):
         self.numero = numero
         self.titular = titular
@@ -61,7 +63,7 @@ class Banco:
     def Emprestimo(self,valor):
         perfil_cliente = self.titular # titular foi feito com a class Pessoa, portanto tem idade
         print('Analisando seu perfil...')
-        if perfil_cliente.idade < 21:
+        if perfil_cliente.idade < 18:
             print('Idade insuficiente para fazer emprestimos')
         else:
             self.saldo += valor

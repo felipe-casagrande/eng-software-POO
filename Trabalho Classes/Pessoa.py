@@ -1,11 +1,8 @@
 class Pessoa:
-    def __init__(self,nome,idade):
+    def __init__(self,nome,idade,sexo):
         self.nome = nome
         self.idade = idade
+        self.sexo = sexo
+        
 
 
-class Objeto:
-     def __init__(self,nome,tipo,cor):
-         self.nome = nome
-         self.tipo = tipo
-         self.cor = cor   
