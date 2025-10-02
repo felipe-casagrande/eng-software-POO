@@ -33,7 +33,7 @@ class Carro:
  
     def ligar(self, pessoa: "Pessoa"):
         if self.chave == pessoa.chave.id_chave:
-            if not self.porta_aberta and pessoa.dentro_carro:
+            if not self.porta_aberta and pessoa.dentro_carro:  #só pode ligar se a porta tiver tiver fechada e tiver alguem dentro
                 self.ligado = True
                 print(f'Ligando carro!')
                 self.historico.append('Ligar carro')
@@ -57,8 +57,8 @@ class Carro:
             print('Chave nao esta valida')        
 
     def acelerar(self,pessoa: "Pessoa"):
-        #pelo que entendi, dependendo da marcha que estiver a aceleração vai ser diferente, entao vamos lá, irei fazer até a quinta marcha
-        # nao entendi a necessidade do pessoa.., entao irei colocar que apenas a pessoa que esta dentro pode acelerar ou frear
+        #pelo que entendi, dependendo da marcha que estiver a aceleração vai ser diferente, entao vamos lá, irei fazer até a sexta marcha.
+        # nao entendi a necessidade do pessoa.., entao irei colocar que só pode freiar ou acelerar se estiver alguma pessoa dentro.
 
         if self.chave == pessoa.chave.id_chave:   #verificando se a chave é a certa
             if self.porta_aberta or not self.pessoa_dentro:     
@@ -67,28 +67,28 @@ class Carro:
                 if self.ligado:
                     if self.marcha == 1:
                         self.velocidade += 5.0
-                        print('Acelerando 5km')
+                        print(f'Acelerando + 5km, velocidade atual {self.velocidade}km/h')
                         self.historico.append('Acelerando carro')
                     elif self.marcha == 2:
                         self.velocidade += 10.0
-                        print('Acelerando 10km')
+                        print(f'Acelerando + 10km, velocidade atual {self.velocidade}km/h')
                         self.historico.append('Acelerando carro')
                     elif self.marcha == 3:
                         self.velocidade += 15.0 
-                        print('Acelerando 15km')
+                        print('Acelerando + 15km, velocidade atual {self.velocidade}km/h')
                         self.historico.append('Acelerando carro')
                     elif self.marcha == 4:
                         self.velocidade += 20.0
-                        print('Acelerando 20km')
+                        print(f'Acelerando + 20km, velocidade atual {self.velocidade}km/h')
                         self.historico.append('Acelerando carro')
                     elif self.marcha == 5:
                         self.velocidade += 25.0
                         self.historico.append('Acelerando carro')
-                        print('Acelerando 25km')
+                        print(f'Acelerando + 25km, velocidade atual {self.velocidade}km/h')
                         self.historico.append('Acelerando carro')   
                     elif self.marcha == 6:
                         self.velocidade += 30.0
-                        print('Acelerando 30km')
+                        print(f'Acelerando + 30km, velocidade atual {self.velocidade}')
                         self.historico.append('Acelerando carro')
                     else:
                         print('Passe uma marcha primeiro para acelerar!')    
@@ -104,7 +104,7 @@ class Carro:
             else:
                 if self.ligado and self.velocidade>0:
                     self.velocidade -=5
-                    print(f'Diminuindo.., velocidade atual : {self.velocidade}')
+                    print(f'Diminuindo.., velocidade atual : {self.velocidade}km/h')
                     self.historico.append('Freando carro')
                 else:
                     print('Carro nao esta em movimento para ser freiado')
@@ -120,10 +120,11 @@ class Carro:
         elif marcha >7:
             print('Nao tem carro com essa quantidade de marcha, passe ate a sexta marcha!')
         else:
-            if marcha < self.marcha:
+            print(f'Trocando para a {marcha} marcha')
+            if marcha < self.marcha:       #se for diminuir a marcha, irá realizar o freio motor.
                 #nao sei quanto diminuir, irei tirar 5km
                 self.velocidade -=5.0
-                print(f"Diminuindo velocidade com freio motor, velocidade atual {self.velocidade}km/h")
+                print(f"Diminuindo -5km de velocidade com freio motor, velocidade atual {self.velocidade}km/h")
             self.marcha = marcha
             self.historico.append('Trocando de marcha')
     
