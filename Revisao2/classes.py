@@ -59,52 +59,49 @@ class Carro:
     def acelerar(self,pessoa: "Pessoa"):
         #pelo que entendi, dependendo da marcha que estiver a aceleração vai ser diferente, entao vamos lá, irei fazer até a quinta marcha
         # nao entendi a necessidade do pessoa.., entao irei colocar que apenas a pessoa que esta dentro pode acelerar ou frear
-        if self.chave == pessoa.chave.id_chave:
-            if self.pessoa_dentro is not pessoa:
-                print("Somente a pessoa autorizada dentro do carro pode acelerar.")
+
+        if self.chave == pessoa.chave.id_chave:   #verificando se a chave é a certa
+            if self.porta_aberta or not self.pessoa_dentro:     
+                print('Nao tem como acelerar com a porta aberta ou sem pessoas dentro...')
             else:
-                if self.porta_aberta or not self.pessoa_dentro:
-                    print('Nao tem como acelerar com a porta aberta ou sem pessoas dentro...')
-                else:
-                    if self.ligado:
-                        if self.marcha == 1:
-                            self.velocidade += 5.0
-                            print('Acelerando 5km')
-                            self.historico.append('Acelerando carro')
-                        elif self.marcha == 2:
-                            self.velocidade += 10.0
-                            print('Acelerando 10km')
-                            self.historico.append('Acelerando carro')
-                        elif self.marcha == 3:
-                            self.velocidade += 15.0 
-                            print('Acelerando 15km')
-                            self.historico.append('Acelerando carro')
-                        elif self.marcha == 4:
-                            self.velocidade += 20.0
-                            print('Acelerando 20km')
-                            self.historico.append('Acelerando carro')
-                        elif self.marcha == 5:
-                            self.velocidade += 25.0
-                            self.historico.append('Acelerando carro')
-                            print('Acelerando 25km')
-                            self.historico.append('Acelerando carro')   
-                        elif self.marcha == 6:
-                            self.velocidade += 30.0
-                            print('Acelerando 30km')
-                            self.historico.append('Acelerando carro')
-                        else:
-                            print('Passe uma marcha primeiro para acelerar!')    
+                if self.ligado:
+                    if self.marcha == 1:
+                        self.velocidade += 5.0
+                        print('Acelerando 5km')
+                        self.historico.append('Acelerando carro')
+                    elif self.marcha == 2:
+                        self.velocidade += 10.0
+                        print('Acelerando 10km')
+                        self.historico.append('Acelerando carro')
+                    elif self.marcha == 3:
+                        self.velocidade += 15.0 
+                        print('Acelerando 15km')
+                        self.historico.append('Acelerando carro')
+                    elif self.marcha == 4:
+                        self.velocidade += 20.0
+                        print('Acelerando 20km')
+                        self.historico.append('Acelerando carro')
+                    elif self.marcha == 5:
+                        self.velocidade += 25.0
+                        self.historico.append('Acelerando carro')
+                        print('Acelerando 25km')
+                        self.historico.append('Acelerando carro')   
+                    elif self.marcha == 6:
+                        self.velocidade += 30.0
+                        print('Acelerando 30km')
+                        self.historico.append('Acelerando carro')
                     else:
+                        print('Passe uma marcha primeiro para acelerar!')    
+                else:
                         print('Carro nao esta ligado para acelerar')
         else:
             print('Chave nao esta valida')                
 
     def frear(self,pessoa:"Pessoa"):
         if self.chave == pessoa.chave.id_chave:
-            if self.pessoa_dentro is not pessoa:
-                print("Somente a pessoa autorizada dentro do carro pode acelerar.")
+            if self.porta_aberta or not self.pessoa_dentro:     
+                print('Nao tem como frear com a porta aberta ou sem pessoas dentro...')
             else:
-
                 if self.ligado and self.velocidade>0:
                     self.velocidade -=5
                     print(f'Diminuindo.., velocidade atual : {self.velocidade}')
