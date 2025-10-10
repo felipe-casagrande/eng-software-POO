@@ -23,15 +23,16 @@ pessoa2 = Pessoa('Diego Ramos', 30,'Masculino')
 Carro1= Carro('Toyota Etios',2025,'Preta',2.0,'KPH227')
 
 conta1 = Banco(21,pessoa1,100,"Itau",2021)
-conta2 = Banco(22,pessoa2,10000,'Bradesco',2222)
+conta2 = Banco(22,pessoa2,0,'Bradesco',2222)
 
     
 
-conta1.saque(1000)
-conta1.Pix(0)
-conta1.Emprestimo(0)
+conta1.saque(10)
+conta1.Pix(50)
+conta1.Emprestimo(1000)
 conta1.TED('BRADESCO',50)
 conta1.chequeEspecial(10)
+conta2.chequeEspecial(1000)
 conta1.Credito('celular',1000)
 conta1.Credito('casa',5000)
 conta1.VerFatura_credito()

@@ -22,52 +22,52 @@ class Banco:
             taxa = 0.005
             valor = valor + (valor*taxa)
             if valor > self.saldo:
-                print('Saldo insuficiente para realizar transferencia')
+                print(f'{self.nome}: Saldo insuficiente para realizar transferencia')
             else:
                 self.saldo -= valor
-                print('Transferencia realizada para banco diferente')
-                print(f"Transferencia de R${valor}")
+                print(f'{self.nome}: Transferencia realizada para banco diferente')
+                print(f"{self.nome}: Transferencia de R${valor}")
         else:
             if valor > self.saldo:
-                print('Saldo insuficiente para realizar transferencia')
+                print(f'{self.nome}: Saldo insuficiente para realizar transferencia')
             else:
                 self.saldo -= valor
-                print('Transferencia realizada para o mesmo banco')
-                print(f"Transferencia de R${valor}")
+                print(f'{self.nome}: Transferencia realizada para o mesmo banco')
+                print(f"{self.nome}: Transferencia de R${valor}")
 
 
 
     def saque(self, valor):
         if valor > self.saldo:
-            print('Saldo indisponivel para realizar esse saque!')
+            print(f'{self.nome}: Saldo indisponivel para realizar esse saque!')
         else:
             self.saldo -= valor
-            print(f'Saque de R${valor} realizado!')
+            print(f'{self.nome}: Saque de R${valor} realizado!')
 
 
     def Pix(self,valor):
         if valor > self.saldo:
-            print("Saldo insuficiente para fazer Pix!")
+            print(f"{self.nome}: Saldo insuficiente para fazer Pix!")
         else:
             self.saldo -= valor
-            print(f"pix realizado, saldo atual: R${self.saldo}")
+            print(f"{self.nome}: pix de R${valor} realizado.")
 
     def chequeEspecial(self,valor):
         if self.saldo <= 0:
             self.saldo -=valor
-            print('Cheque especial utilizado')
+            print(f'{self.nome}: Cheque especial utilizado no valor de R${valor}')
 
         else:
-            print('Nao pode realizar cheque especial com saldo na conta!')
+            print(f'{self.nome}: Nao pode realizar cheque especial com saldo na conta!')
 
     def Emprestimo(self,valor):
         perfil_cliente = self.titular # titular foi feito com a class Pessoa, portanto tem idade
-        print('Analisando seu perfil...')
+        print(f'{self.nome}:Analisando seu perfil...')
         if perfil_cliente.idade < 18:
-            print('Idade insuficiente para fazer emprestimos')
+            print(f'{self.nome}: Idade insuficiente para fazer emprestimos')
         else:
             self.saldo += valor
-            print(f'Emprestimo de R${valor} realizado!')
+            print(f'{self.nome}: Emprestimo de R${valor} realizado!')
 
     def Credito(self,item,valor):
         cobrança = {
@@ -75,7 +75,7 @@ class Banco:
             'valor':valor,
         }
         self.credito.append(cobrança)
-        print(f'Compra no credito realizada no valor de R${valor}')
+        print(f'{self.nome}: Compra no credito realizada no valor de R${valor}')
 
 
     def VerFatura_credito(self):

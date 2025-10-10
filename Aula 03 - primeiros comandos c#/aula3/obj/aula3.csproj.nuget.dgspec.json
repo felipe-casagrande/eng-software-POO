@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Felipao\\Documents\\POO\\POO\\Aula 03 - primeiros comandos c#\\aula3\\aula3.csproj": {}
+    "C:\\Users\\Felipao\\Documents\\POO\\Aula 03 - primeiros comandos c#\\aula3\\aula3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Felipao\\Documents\\POO\\POO\\Aula 03 - primeiros comandos c#\\aula3\\aula3.csproj": {
+    "C:\\Users\\Felipao\\Documents\\POO\\Aula 03 - primeiros comandos c#\\aula3\\aula3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felipao\\Documents\\POO\\POO\\Aula 03 - primeiros comandos c#\\aula3\\aula3.csproj",
+        "projectUniqueName": "C:\\Users\\Felipao\\Documents\\POO\\Aula 03 - primeiros comandos c#\\aula3\\aula3.csproj",
         "projectName": "aula3",
-        "projectPath": "C:\\Users\\Felipao\\Documents\\POO\\POO\\Aula 03 - primeiros comandos c#\\aula3\\aula3.csproj",
+        "projectPath": "C:\\Users\\Felipao\\Documents\\POO\\Aula 03 - primeiros comandos c#\\aula3\\aula3.csproj",
         "packagesPath": "C:\\Users\\Felipao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felipao\\Documents\\POO\\POO\\Aula 03 - primeiros comandos c#\\aula3\\obj\\",
+        "outputPath": "C:\\Users\\Felipao\\Documents\\POO\\Aula 03 - primeiros comandos c#\\aula3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

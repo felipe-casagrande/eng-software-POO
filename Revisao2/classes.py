@@ -15,7 +15,7 @@ class Carro:
         self.historico = []
 
     def abrir(self, chave):
-        if self.chave == chave:
+        if self.chave == chave and not self.porta_aberta:
             self.porta_aberta = True
             print('Abrindo carro')
             self.historico.append('Abrir carro')    
@@ -24,7 +24,7 @@ class Carro:
             print('Chave nao compativel ')
 
     def fechar(self, chave):
-        if self.chave == chave:
+        if self.chave == chave and self.porta_aberta:
             self.porta_aberta = False
             print('Fechando carro')
             self.historico.append('Fechar carro')    
@@ -32,7 +32,7 @@ class Carro:
             print('Chave nao compativel para fechar')
  
     def ligar(self, pessoa: "Pessoa"):
-        if self.chave == pessoa.chave.id_chave:
+        if self.chave == pessoa.chave.id_chave and not self.ligado :
             if not self.porta_aberta and pessoa.dentro_carro:  #só pode ligar se a porta tiver tiver fechada e tiver alguem dentro
                 self.ligado = True
                 print(f'Ligando carro!')
@@ -75,7 +75,7 @@ class Carro:
                         self.historico.append('Acelerando carro')
                     elif self.marcha == 3:
                         self.velocidade += 15.0 
-                        print('Acelerando + 15km, velocidade atual {self.velocidade}km/h')
+                        print(f'Acelerando + 15km, velocidade atual {self.velocidade}km/h')
                         self.historico.append('Acelerando carro')
                     elif self.marcha == 4:
                         self.velocidade += 20.0
@@ -106,6 +106,8 @@ class Carro:
                     self.velocidade -=5
                     print(f'Diminuindo.., velocidade atual : {self.velocidade}km/h')
                     self.historico.append('Freando carro')
+                    if self.velocidade <0:
+                        self.velocidade =0
                 else:
                     print('Carro nao esta em movimento para ser freiado')
         else:
