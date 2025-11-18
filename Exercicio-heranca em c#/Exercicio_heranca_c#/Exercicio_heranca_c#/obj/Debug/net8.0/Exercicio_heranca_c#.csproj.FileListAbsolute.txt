@@ -1,0 +1,15 @@
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\obj\Debug\net8.0\Exercicio_heranca_c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\obj\Debug\net8.0\Exercicio_heranca_c#.AssemblyInfoInputs.cache
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\obj\Debug\net8.0\Exercicio_heranca_c#.AssemblyInfo.cs
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\obj\Debug\net8.0\Exercicio_heranca_c#.csproj.CoreCompileInputs.cache
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\obj\Debug\net8.0\Exercicio_heranca_c#.sourcelink.json
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\bin\Debug\net8.0\Exercicio_heranca_c#.exe
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\bin\Debug\net8.0\Exercicio_heranca_c#.deps.json
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\bin\Debug\net8.0\Exercicio_heranca_c#.runtimeconfig.json
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\bin\Debug\net8.0\Exercicio_heranca_c#.dll
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\bin\Debug\net8.0\Exercicio_heranca_c#.pdb
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\obj\Debug\net8.0\Exercicio_heranca_c#.dll
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\obj\Debug\net8.0\refint\Exercicio_heranca_c#.dll
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\obj\Debug\net8.0\Exercicio_heranca_c#.pdb
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\obj\Debug\net8.0\Exercicio_heranca_c#.genruntimeconfig.cache
+C:\Users\Felipao\Documents\POO\Exercicio-heranca em c#\Exercicio_heranca_c#\Exercicio_heranca_c#\obj\Debug\net8.0\ref\Exercicio_heranca_c#.dll

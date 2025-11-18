@@ -10,12 +10,12 @@ namespace aula3
     {
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
-        public int Idade { get; set; }
-        public Pessoa(string nome, string sobrenome, int idade)
+        public string Cpf{ get; set; }
+        public Pessoa(string nome, string sobrenome, string cpf)
         {
             Nome = nome;
             Sobrenome = sobrenome;
-            Idade = idade;
+            Cpf = cpf;
         }
     }
 }

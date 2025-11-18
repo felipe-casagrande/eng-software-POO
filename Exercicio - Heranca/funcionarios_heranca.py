@@ -58,10 +58,6 @@ def imprimir_resumo(funcionario:Funcionario):
     funcionario.descrever()
     funcionario.calcular_bonus()
 
-
-
-
-
 f2 = Gerente('pl',1000)
 f3 = Desenvolvedor('felipao',1000,'c#')
 f2.descrever()

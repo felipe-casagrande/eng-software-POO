@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -24,17 +25,23 @@ namespace aula3
 
             //criando idade
 
-            Console.WriteLine("Digite sua idade: ");
-            string idade_texto = Console.ReadLine();
-            int idade_usuario = int.Parse(idade_texto);
+            Console.WriteLine("Digite seu cpf: ");
+            string cpf_usuario = Console.ReadLine();
+            
             //mudando nome
-            Console.WriteLine("Digite um novo nome");
-            nome_usuario = Console.ReadLine();
+            
             // criando a pessoa
 
-            Pessoa p1 = new Pessoa(nome_usuario,sobrenome_usuario,idade_usuario);
-            Console.WriteLine($"Pessoa 1: {p1.Nome} {p1.Sobrenome} tem {p1.Idade} anos!");
+            Pessoa p1 = new Pessoa(nome_usuario,sobrenome_usuario,cpf_usuario);
+            Console.WriteLine($"Pessoa 1: {p1.Nome} {p1.Sobrenome} tem {p1.Cpf} anos!");
+            if (p1.Cpf.Length < 11) {
+                Console.WriteLine("Nome pequeno");
+            } else if (p1.Cpf.Length == 11) {
+                Console.WriteLine("cpf valido");
+            }else { Console.WriteLine("Cpf grande dms"); }
         }
+        
+
     }
           
 }
